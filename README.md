@@ -1,0 +1,5 @@
+1. **How much data your publisher program will send to the message broker in one run?**
+- Dalam satu run program publisher memanggil publish_event sebanyak 5 kali, sehingga akan mengirim 5 pesan ke broker. Setiap pesan adalah hasil serialisasi Borsh dari struct yang berisi dua string (user_id + user_name), yaitu sekitar puluhan byte per pesan.
+
+2. **The url of: “amqp://guest:guest@localhost:5672” is the same as in the subscriber program, what does it mean?**
+- URL amqp://guest:guest@localhost:5672 sama persis di publisher dan subscriber artinya keduanya terhubung ke broker AMQP yang sama di mesin lokal (localhost) pada port 5672 dengan kredensial user/pass guest/guest.
