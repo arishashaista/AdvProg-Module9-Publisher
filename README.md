@@ -10,4 +10,11 @@
 4. **Sending and processing event**
 ![Sending and processing event 1](img/Sending_and_processing_event_1.jpg)
 ![Sending and processing event 2](img/Sending_and_processing_event_2.jpg)
+Gambar pertama menunjukkan konsol publisher + subscriber sedang aktif: kamu lihat log “Message received…” di terminal dan ada spike antrean di UI RabbitMQ. Gambar kedua hanya UI RabbitMQ saat belum ada trafik dan memiliki 1 instance subcribers dengan menandakan socket = 1.
+
+5. **Monitoring chart based on publisher**
+![Monitoring chart based on publisher](img/Monitoring_chart_based_on_publisher.jpg)
+Ketika menjalankan ulang `cargo run` di folder publisher,  
+broker menerima burst pesan sehingga terlihat spike di grafik.
+Spike ini menunjukkan volume pesan yang masuk setiap kali publisher dijalankan.
 
