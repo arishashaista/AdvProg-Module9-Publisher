@@ -6,3 +6,8 @@
 
 3. **Running RabbitMQ as message broker**
 ![Running RabbitMQ as message broker](img/Running_RabbitMQ_as_message_broker.jpg)
+
+4. **Sending and processing event**
+![Sending and processing event 1](img/Sending_and_processing_event_1.jpg)
+![Sending and processing event 2](img/Sending_and_processing_event_2.jpg)
+
